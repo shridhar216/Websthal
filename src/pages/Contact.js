@@ -1,204 +1,113 @@
-// import React from 'react'
-
-// const Contact = () => {
-//   return (
-//     <div>Contact</div>
-//   )
-// }
-
-// export default Contact
-
-
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import emailjs from '@emailjs/browser';
-import styles from './Contact.module.css'; // Import the CSS module
+import React from "react";
+import {
+  Box,
+  Typography,
+  Grid,
+  Container,
+  TextField,
+  Button,
+  Paper,
+} from "@mui/material";
+import EmailIcon from "@mui/icons-material/Email";
+import CallIcon from "@mui/icons-material/Call";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 
 const Contact = () => {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
-
-  const [disabled, setDisabled] = useState(false);
-  const [alertInfo, setAlertInfo] = useState({
-    display: false,
-    message: '',
-    type: '',
-  });
-
-  const toggleAlert = (message, type) => {
-    setAlertInfo({ display: true, message, type });
-
-    setTimeout(() => {
-      setAlertInfo({ display: false, message: '', type: '' });
-    }, 5000);
-  };
-
-  const onSubmit = async (data) => {
-    const { name, email, subject, message } = data;
-
-    try {
-      setDisabled(true);
-
-      const templateParams = {
-        name,
-        email,
-        subject,
-        message,
-      };
-
-      await emailjs.send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        templateParams,
-        import.meta.env.VITE_PUBLIC_KEY
-      );
-
-      toggleAlert('Form submission was successful!', 'success');
-    } catch (e) {
-      console.error(e);
-      toggleAlert('Uh oh. Something went wrong.', 'danger');
-    } finally {
-      setDisabled(false);
-      reset();
-    }
-  };
-
   return (
-    <div className={styles.contactForm}>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 text-center">
-            <form
-              id="contact-form"
-              onSubmit={handleSubmit(onSubmit)}
-              noValidate
-            >
-              {/* Row 1 */}
-              <div className="row">
-                <div className="col-6">
-                  <input
-                    type="text"
-                    name="name"
-                    {...register('name', {
-                      required: {
-                        value: true,
-                        message: 'Please enter your name',
-                      },
-                      maxLength: {
-                        value: 30,
-                        message: 'Please use 30 characters or less',
-                      },
-                    })}
-                    className={styles.formInput}
-                    placeholder="Name"
-                  />
-                  {errors.name && (
-                    <span className={styles.errorMessage}>
-                      {errors.name.message}
-                    </span>
-                  )}
-                </div>
-                <div className="col-6">
-                  <input
-                    type="email"
-                    name="email"
-                    {...register('email', {
-                      required: true,
-                      pattern:
-                        /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                    })}
-                    className={styles.formInput}
-                    placeholder="Email address"
-                  />
-                  {errors.email && (
-                    <span className={styles.errorMessage}>
-                      Please enter a valid email address
-                    </span>
-                  )}
-                </div>
-              </div>
+    <>
+      {/* Header Image / Section */}
+ <Box
+        component="img"
+        src="/image/img4.jpg"
+        alt="Our Services"
+        sx={{
+          width: "100%",
+          height: { xs: "40vh", md: "60vh" },
+          objectFit: "cover",
+          imageRendering: "auto",
+          boxShadow: 4,
+        }}
+      >
+        <Typography variant="h3" color="white" sx={{ fontWeight: "bold" }}>
+          Contact Us
+        </Typography>
+      </Box>
 
-              {/* Row 2 */}
-              <div className="row">
-                <div className="col">
-                  <input
-                    type="text"
-                    name="subject"
-                    {...register('subject', {
-                      required: {
-                        value: true,
-                        message: 'Please enter a subject',
-                      },
-                      maxLength: {
-                        value: 75,
-                        message: 'Subject cannot exceed 75 characters',
-                      },
-                    })}
-                    className={styles.formInput}
-                    placeholder="Subject"
-                  />
-                  {errors.subject && (
-                    <span className={styles.errorMessage}>
-                      {errors.subject.message}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              {/* Row 3 */}
-              <div className="row">
-                <div className="col">
-                  <textarea
-                    rows={3}
-                    name="message"
-                    {...register('message', {
-                      required: true,
-                    })}
-                    className={styles.formInput}
-                    placeholder="Message"
-                  ></textarea>
-                  {errors.message && (
-                    <span className={styles.errorMessage}>
-                      Please enter a message
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              <button
-                className={`${styles.submitBtn} btn btn-primary`}
-                disabled={disabled}
-                type="submit"
+      <Container maxWidth="lg" sx={{ mt: 6, mb: 6 }}>
+        <Grid container spacing={4} justifyContent="center">
+          {/* Contact Cards */}
+          {[
+            {
+              icon: <SupportAgentIcon fontSize="large" />,
+              title: "Support",
+              subtitle: "24x7 Sales Support",
+            },
+            {
+              icon: <CallIcon fontSize="large" />,
+              title: "Call",
+              subtitle: "+91-8010988837",
+            },
+            {
+              icon: <EmailIcon fontSize="large" />,
+              title: "Email",
+              subtitle: "info@algorizon.com",
+            },
+          ].map((item, index) => (
+            <Grid item xs={12} md={4} key={index}>
+              <Paper
+                elevation={3}
+                sx={{
+                  p: 3,
+                  textAlign: "center",
+                  height: "100%",
+                }}
               >
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
+                <Box sx={{ mb: 2 }}>{item.icon}</Box>
+                <Typography variant="h6">{item.title}</Typography>
+                <Typography variant="body2" color="textSecondary">
+                  {item.subtitle}
+                </Typography>
+              </Paper>
+            </Grid>
+          ))}
+        </Grid>
 
-      {alertInfo.display && (
-        <div
-          className={`alert alert-${alertInfo.type} alert-dismissible mt-5`}
-          role="alert"
-        >
-          {alertInfo.message}
-          <button
-            type="button"
-            className="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-            onClick={() =>
-              setAlertInfo({ display: false, message: '', type: '' })
-            }
-          ></button>
-        </div>
-      )}
-    </div>
+        {/* Contact Form + Map */}
+        <Grid container spacing={4} sx={{ mt: 6 }}>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h4" gutterBottom>
+              Hey! Get In touch
+            </Typography>
+            <Typography variant="body2" color="textSecondary" sx={{ mb: 2 }}>
+              Welcome all. Please fill in the details below to enable us to get in touch with you at the earliest.
+            </Typography>
+            <Box component="form" sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+              <TextField label="Your Name" fullWidth />
+              <TextField label="Your Email" type="email" fullWidth />
+              <TextField label="Subject" fullWidth />
+              <TextField label="Message" multiline rows={4} fullWidth />
+              <Button variant="contained" sx={{ alignSelf: "flex-start" }}>
+                Submit
+              </Button>
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Box sx={{ height: "100%", minHeight: "400px" }}>
+              <iframe
+                title="Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.406828555833!2d92.72363317493366!3d25.577197177467994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374fcbce823cc9fb%3A0xb08d8bfb42c5d4c7!2sALGORIZON%20TECHNOLOGIES!5e0!3m2!1sen!2sin!4v1689943099384!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
+            </Box>
+          </Grid>
+        </Grid>
+      </Container>
+    </>
   );
 };
 
