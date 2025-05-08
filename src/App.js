@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import HomePage from './pages/HomePage'; 
-import CompanyProfile from './pages/CompanyProfile'; 
+import CompanyProfile from './pages/CompanyProfile'
 import Services from './pages/Services';
 import Careers from './pages/Careers';
 import FAQ from './pages/FAQ';
@@ -82,7 +82,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="/company-profile" element={<CompanyProfile />} />
+          <Route path="/company-profile" element={<CompanyProfile/>} />
           <Route path="/services" element={<Services />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/faq" element={<FAQ />} />

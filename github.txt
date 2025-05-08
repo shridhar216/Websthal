@@ -1,0 +1,64 @@
+github help
+
+git init
+.gitignore
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/your-username/your-repository.git
+git push -u origin master  # or `main` depending on your default branch name
+
+
+git pull origin master  # or `main`
+git add .
+git commit -m "Describe your changes"
+git push
+
+
+
+
+
+Log in to GitHub in your browser.
+
+Go to this link to manage your tokens:
+👉 https://github.com/settings/tokens
+
+Click "Generate new token (classic)"
+
+Give it a name like “My Git Token” and expiration date
+
+Under "Select scopes", check:
+
+✅ repo (Full control of private repositories)
+
+Click Generate token
+
+Copy the token immediately – you will not see it again after leaving the page.
+
+🔑 Step 2: Use the PAT Instead of Your Password
+Now that you have your PAT, follow these steps:
+
+🔄 A. Clear Any Saved Credentials
+If Git is still using your old credentials (like softwarece1), you’ll need to clear them.
+
+On Windows:
+
+Open Credential Manager (from Start Menu)
+
+Go to Windows Credentials
+
+Find entries related to github.com, like:
+
+arduino
+Copy
+Edit
+git:https://github.com
+Remove them
+
+💻 Step 3: Push with Your New Credentials
+Now go to your terminal and push again:
+
+bash
+Copy
+Edit
+git push origin main
+When Git prompts:
