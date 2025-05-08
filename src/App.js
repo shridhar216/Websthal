@@ -26,7 +26,7 @@ const App = () => {
         Algorizon Technologies
       </Typography>
       <List>
-        {['Home', 'Company Profile', 'Services', 'Careers', 'FAQ', 'Contact', 'Blog'].map((text) => (
+        {['Home', 'Company Profile', 'Services', 'FAQ', 'Contact', 'Blog'].map((text) => (
           <ListItem button key={text} onClick={() => navigate(`/${text.toLowerCase().replace(/ /g, '-')}`)}>
             <ListItemText primary={text} />
           </ListItem>
@@ -52,7 +52,7 @@ const App = () => {
             Algorizon Technologies
           </Typography>
           <div style={{ display: 'flex' }}>
-            {['Home', 'Company Profile', 'Services', 'Careers', 'FAQ', 'Contact', 'Blog'].map((text) => (
+            {['Home', 'Company Profile', 'Services', 'FAQ', 'Contact', 'Blog'].map((text) => (
               <Button
                 key={text}
                 color="inherit"

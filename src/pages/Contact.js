@@ -16,18 +16,19 @@ const Contact = () => {
   return (
     <>
       {/* Header Image / Section */}
- <Box
-        component="img"
-        src="/image/img4.jpg"
-        alt="Our Services"
+      <Box
         sx={{
           width: "100%",
-          height: { xs: "40vh", md: "60vh" },
-          objectFit: "cover",
-          imageRendering: "auto",
-          boxShadow: 4,
+          height: { xs: "30vh", md: "50vh" },
+          backgroundImage: 'url("/image/ContactUs.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
+
         <Typography variant="h3" color="white" sx={{ fontWeight: "bold" }}>
           Contact Us
         </Typography>
