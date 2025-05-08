@@ -27,14 +27,14 @@ const testimonialsData = [
     name: 'Shakti Shekhawat',
     time: '4 years ago',
     rating: 5,
-    review: 'Algorizon Technologies met with our expectations in designing an easy to use and eye-catching website for our...',
+    review: 'Websthal met with our expectations in designing an easy to use and eye-catching website for our...',
     avatarUrl: '/path-to-avatar1.jpg', // replace with actual image paths
   },
   {
     name: 'Miss RanzitaDaz',
     time: '4 years ago',
     rating: 5,
-    review: 'We joined hands with Algorizon Technologies as we required a website and logo design for our aviation institute...',
+    review: 'We joined hands with Websthal as we required a website and logo design for our aviation institute...',
     avatarUrl: '/path-to-avatar2.jpg',
   },
   {
@@ -139,7 +139,7 @@ const settings = {
 
 
 
-        {/* New Section: Why Choose Algorizon */}
+        {/* New Section: Why Choose Websthal */}
         <Grid container spacing={4} style={{ marginTop: '64px' }}>
           {/* Left Side Image */}
           <Grid item xs={12} md={6}>
@@ -155,10 +155,10 @@ const settings = {
           <Grid item xs={12} md={6}>
             <Box sx={{ paddingLeft: { xs: 0, md: '32px' } }}>
               <Typography variant="h4" component="h2" gutterBottom>
-                Why Choose Algorizon Technologies
+                Why Choose Websthal
               </Typography>
               <Typography variant="body1" paragraph>
-                The business philosophy of the company is to lay emphasis on Human Values and Personal Relations. ‘At Algorizon – Technology meets emotions and limits are higher than the sky.’ Great stress is laid on proper communication, transparency, and human relations, which forms an integral part of the corporate culture. At Algorizon, a Software and Digital Marketing Company, we not only develop products but we develop relationships. We at Algorizon believe in teamwork.
+                The business philosophy of the company is to lay emphasis on Human Values and Personal Relations. ‘At Websthal – Technology meets emotions and limits are higher than the sky.’ Great stress is laid on proper communication, transparency, and human relations, which forms an integral part of the corporate culture. At Websthal, a Software and Digital Marketing Company, we not only develop products but we develop relationships. We at Websthal believe in teamwork.
               </Typography>
 
               {/* Bullet Points */}
@@ -470,7 +470,7 @@ const settings = {
 
 
 
-        {/* About Algorizon Section */}
+        {/* About Websthal Section */}
       <Box sx={{ padding: '64px 0', backgroundColor: '#F9F9F9' }}>
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
@@ -487,7 +487,7 @@ const settings = {
                 <Box
                   component="img"
                   src="/image/grid/about11.png" // Replace with the actual image path
-                  alt="Algorizon Visualization"
+                  alt="Websthal Visualization"
                   sx={{
                     maxWidth: '100%',
                    
@@ -508,7 +508,7 @@ const settings = {
                 }}
               >
                 Expressing our narrative through the term{' '}
-                <span style={{ color: '#FF0000' }}>"Algorizon"</span>
+                <span style={{ color: '#FF0000' }}>"Websthal"</span>
               </Typography>
               <Typography
                 variant="body1"
@@ -518,9 +518,9 @@ const settings = {
                   lineHeight: '1.8',
                 }}
               >
-                Behind the story of Algorizon Technologies is our vision that
+                Behind the story of Websthal is our vision that
                 has been expressed through the meaning of our name. The name
-                "Algorizon" is the amalgamation of two terms "Algorithm" and
+                "Websthal" is the amalgamation of two terms "Algorithm" and
                 "Horizon". Algorithm refers to a set of instructions that is
                 used to perform a specific task whereas Horizon refers to the
                 line where apparently earth seems to meet the sky.
@@ -533,8 +533,8 @@ const settings = {
                   lineHeight: '1.8',
                 }}
               >
-                At Algorizon, we believe every complex problem has a solution
-                with the right use of algorithms. Algorizon Technologies is
+                At Websthal, we believe every complex problem has a solution
+                with the right use of algorithms. Websthal is
                 onboard a journey in which it is discovering and adopting from
                 the range of algorithms to build a technical world beyond our
                 horizon of imaginations.
@@ -800,7 +800,7 @@ const settings = {
             What customers think about us?
           </Typography>
           <Typography variant="body1" align="center" color="textSecondary" gutterBottom>
-            Check out what our clients have to say about their experience associating/working with Algorizon Technologies
+            Check out what our clients have to say about their experience associating/working with Websthal
           </Typography>
 
           <Slider {...settings}>
@@ -862,7 +862,7 @@ const settings = {
             {/* About Section */}
             <Grid item xs={12} md={4}>
               <Typography variant="h6" sx={{ marginBottom: '16px', fontWeight: 'bold' }}>
-                Algorizon Technologies
+                Websthal
               </Typography>
               <Typography variant="body2">
                 We are a prominent and innovative organization committed to delivering omnipresent,
@@ -922,7 +922,7 @@ const settings = {
                 </ListItem>
                 <ListItem disablePadding>
                   <EmailIcon sx={{ marginRight: '8px' }} />
-                  <Typography variant="body2">info@algorizon.com, algorizon@gmail.com</Typography>
+                  <Typography variant="body2">info@Websthal.com, Websthal@gmail.com</Typography>
                 </ListItem>
                 <ListItem disablePadding>
                   <PhoneIcon sx={{ marginRight: '8px' }} />
@@ -930,7 +930,7 @@ const settings = {
                 </ListItem>
                 <ListItem disablePadding>
                   <LanguageIcon sx={{ marginRight: '8px' }} />
-                  <Typography variant="body2">www.algorizon.com</Typography>
+                  <Typography variant="body2">www.Websthal.com</Typography>
                 </ListItem>
               </List>
             </Grid>
@@ -940,7 +940,7 @@ const settings = {
             align="center"
             sx={{ marginTop: '16px', color: '#aaa' }}
           >
-            © Algorizon Technologies. All Rights Reserved
+            © Websthal. All Rights Reserved
           </Typography>
         </Container>
       </Box>
@@ -993,7 +993,7 @@ export default HomePage;
 //         }}
 //       >
 //         <Typography variant="h5" gutterBottom>
-//           Welcome to Algorizon
+//           Welcome to Websthal
 //         </Typography>
 //         <Typography variant="h3" gutterBottom>
 //           DIGITAL MARKETING SERVICES

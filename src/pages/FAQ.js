@@ -11,7 +11,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const faqs = [
   {
-    question: "What services does Algorizon Technologies offer?",
+    question: "What services does Websthal offer?",
     answer:
       "We provide web development, mobile app development, digital marketing, UI/UX design, and e-commerce solutions tailored to your business needs.",
   },

@@ -23,10 +23,10 @@ const CompanyProfile = () => {
         {/* Company Overview */}
         <Box sx={{ textAlign: "center", mb: 6 }}>
           <Typography variant="h4" gutterBottom>
-            Algorizon Technologies: Empowering Digital Transformation
+            Websthal: Empowering Digital Transformation
           </Typography>
           <Typography variant="body1" color="textSecondary">
-            Algorizon Technologies is a leading provider of software development
+            Websthal is a leading provider of software development
             and digital marketing solutions, dedicated to helping businesses
             thrive in the digital era. With a focus on innovation, quality, and
             client satisfaction, we offer a full spectrum of IT services
@@ -92,10 +92,10 @@ const CompanyProfile = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography variant="h5" gutterBottom>
-              Why Choose Algorizon Technologies?
+              Why Choose Websthal?
             </Typography>
             <Typography variant="body1" paragraph>
-              At Algorizon, we blend creativity with technology to deliver
+              At Websthal, we blend creativity with technology to deliver
               impactful digital solutions. From strategic planning to
               implementation, our team ensures every solution aligns with client
               goals.

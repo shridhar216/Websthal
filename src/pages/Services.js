@@ -63,7 +63,7 @@ const Services = () => {
             What We Offer
           </Typography>
           <Typography variant="body1" color="textSecondary">
-            Algorizon Technologies offers a full spectrum of technology and marketing services tailored to your business goals. Our expert teams deliver scalable, secure, and user-friendly solutions that ensure long-term success.
+            Websthal offers a full spectrum of technology and marketing services tailored to your business goals. Our expert teams deliver scalable, secure, and user-friendly solutions that ensure long-term success.
           </Typography>
         </Box>
 

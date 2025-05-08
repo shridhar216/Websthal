@@ -6,7 +6,7 @@ const Header = () => {
     <AppBar position="static" color="transparent">
       <Toolbar>
         <Typography variant="h6" style={{ flexGrow: 1 }}>
-          Algorizon Technologies
+          Websthal
         </Typography>
         <Button color="inherit">Home</Button>
         <Button color="inherit">Company Profile</Button>

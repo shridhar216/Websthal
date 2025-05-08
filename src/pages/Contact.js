@@ -19,7 +19,7 @@ const Contact = () => {
       <Box
         sx={{
           width: "100%",
-          height: { xs: "30vh", md: "50vh" },
+          height: { xs: "40vh", md: "60vh" },
           backgroundImage: 'url("/image/ContactUs.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -51,7 +51,7 @@ const Contact = () => {
             {
               icon: <EmailIcon fontSize="large" />,
               title: "Email",
-              subtitle: "info@algorizon.com",
+              subtitle: "info@Websthal.com",
             },
           ].map((item, index) => (
             <Grid item xs={12} md={4} key={index}>
@@ -97,7 +97,7 @@ const Contact = () => {
             <Box sx={{ height: "100%", minHeight: "400px" }}>
               <iframe
                 title="Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.406828555833!2d92.72363317493366!3d25.577197177467994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374fcbce823cc9fb%3A0xb08d8bfb42c5d4c7!2sALGORIZON%20TECHNOLOGIES!5e0!3m2!1sen!2sin!4v1689943099384!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.406828555833!2d92.72363317493366!3d25.577197177467994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374fcbce823cc9fb%3A0xb08d8bfb42c5d4c7!2sWebsthal%20TECHNOLOGIES!5e0!3m2!1sen!2sin!4v1689943099384!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
