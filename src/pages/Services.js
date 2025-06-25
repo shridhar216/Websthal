@@ -46,7 +46,7 @@ const Services = () => {
       {/* Header Image */}
       <Box
         component="img"
-        src="/image/img4.jpg"
+        src="/image/lycs-architecture.jpg"
         alt="Our Services"
         sx={{
           width: "100%",

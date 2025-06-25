@@ -8,7 +8,7 @@ const CompanyProfile = () => {
       {/* Top Carousel */}
       <Box
         component="img"
-        src="/image/profile.jpg" // Update this path to match your image
+        src="/image/lycs-architecture.jpg" // Update this path to match your image
         alt="Company Profile"
         sx={{
           width: "100%",

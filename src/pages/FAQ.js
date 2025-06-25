@@ -43,7 +43,7 @@ const FAQ = () => {
       {/* Top Banner Image */}
       <Box
         component="img"
-        src="/image/profile.jpg" // Place this image in public/images
+        src="/image/campaign-creators.jpg" // Place this image in public/images
         alt="FAQ Banner"
         sx={{
           width: "100%",

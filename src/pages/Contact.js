@@ -20,7 +20,7 @@ const Contact = () => {
         sx={{
           width: "100%",
           height: { xs: "40vh", md: "60vh" },
-          backgroundImage: 'url("/image/ContactUs.jpg")',
+          backgroundImage: 'url("/image/Web-Development.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
@@ -51,7 +51,7 @@ const Contact = () => {
             {
               icon: <EmailIcon fontSize="large" />,
               title: "Email",
-              subtitle: "info@Websthal.com",
+              subtitle: "info@websthal.com",
             },
           ].map((item, index) => (
             <Grid item xs={12} md={4} key={index}>

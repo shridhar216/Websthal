@@ -112,7 +112,7 @@ const settings = {
             >
               <Typography variant="h6">Boosting Business</Typography>
               <Typography variant="body2">
-              Our expertise as a top software firm in Guwahati helps businesses reach new heights through innovative IT solutions and advanced technology.
+              Our expertise as a top software firm in New Delhi helps businesses reach new heights through innovative IT solutions and advanced technology.
               </Typography>
             </Box>
           </Grid>
