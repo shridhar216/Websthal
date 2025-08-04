@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Grid, Box, Typography } from "@mui/material";
+import EmployeeTable from "../components/EmployeeTable";
 
 const services = [
   {
@@ -94,6 +95,14 @@ const Services = () => {
             </Grid>
           ))}
         </Grid>
+
+        {/* Employees Table (fetched from backend) */}
+        <Box sx={{ mt: 8 }}>
+          <Typography variant="h4" gutterBottom textAlign="center">
+            Our Employees
+          </Typography>
+          <EmployeeTable />
+        </Box>
       </Container>
     </>
   );
